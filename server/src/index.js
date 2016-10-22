@@ -1,13 +1,14 @@
 // our packages
 import app from './app';
+import {logger} from './util';
 
 // start server
 app.listen(8080, function() {
 	const host = this.address().address;
 	const port = this.address().port;
-	console.log(`Shard listening at http://${host}:${port}`);
+	logger.info(`Experts server is listening at http://${host}:${port}`);
 });
 
 // output all uncaught exceptions
-process.on('uncaughtException', err => console.error('uncaugh exception:', err));
-process.on('unhandleRejection', error => console.error('unhandled rejection:', error));
+process.on('uncaughtException', err => logger.error('uncaught exception:', err));
+process.on('unhandleRejection', error => logger.error('unhandled rejection:', error));
