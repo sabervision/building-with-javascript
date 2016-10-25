@@ -1,6 +1,7 @@
 // our packages
 import app from './app';
 import {logger} from './util';
+import {thinky} from './db';
 
 // start server
 app.listen(8080, function() {
