@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "db:start": "docker run -d -p 28015:28015 -p 8090:8080 -v $PWD/db:/data --name expertsdb rethinkdb",
+    "db:start": "docker run -d -p 28015:28015 -p 8090:8080 -v $pwd/db:/data --name expertsdb rethinkdb",
     "db:stop": "docker stop expertsdb",
     "db:rm": "docker rm expertsdb",
     "test": "eslint src/ && node test/index.js"
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.17.0",
+    "babel-core": "^6.17.0", 
     "babel-eslint": "^7.0.0",
     "babel-preset-es2015-node": "^6.1.1",
     "babel-preset-stage-0": "^6.16.0",
