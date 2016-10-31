@@ -2,5 +2,9 @@ export const db = {
 	host: 'localhost',
 	port: 28015,
 	db: 'expertsdb',
-	
 }
+
+export const auth = {
+	passwordSalt: '475EE0F15E5A49E21F63FC909599B55B01339DFB6EF24A4830C5CF618EBE783F',
+	sessionSecret: 'F7BCEC5573B600485BE9C817B37C41F0F70B95BFA209C751CA96285F7E33FEC5',
+};
